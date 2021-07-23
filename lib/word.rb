@@ -42,4 +42,8 @@ class Word
     self.inputword = inputword
     @@words[self.id] = Word.new(self.inputword, self.id)
   end
+
+  def definitions
+    Definition.find_by_word(self.id)
+  end
 end
