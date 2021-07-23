@@ -64,4 +64,18 @@ describe '#Word' do
       expect(word2.inputword).to(eq('swag'))
     end
   end
+
+  describe('#delete') do
+    it('should delete a word based on id') do
+      word1 = Word.new('bubblefy', nil)
+      word1.save()
+      word2 = Word.new('uncyorn', nil)
+      word2.save()
+      word3 = Word.new('flutterby', nil)
+      word3.save()
+      word2.delete()
+      expect(Word.all).to(eq([word1, word3]))
+    end
+  end
+
 end
