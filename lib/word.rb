@@ -9,7 +9,7 @@ class Word
   end
 
 
-  def self.all()
+  def self.all
     @@words.values()
   end
 
@@ -31,7 +31,7 @@ class Word
   end
 
   def update(inputword)
-    @inputword =inputword
+    @inputword = inputword
   end
 
   def delete
