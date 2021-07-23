@@ -1,12 +1,13 @@
 class Word
-  attr_accessor :inputword :id
+  attr_accessor :inputword, :id
   @@words = {}
   @@total_ids = 0
 
-  def initiallize(inputword, id)
+  def initialize(inputword, id)
     @inputword = inputword
-    @id = id || @@total_ids +=
+    @id = id || @@total_ids += 1
   end
+
 
   def self.all()
     @@words.values()
@@ -19,9 +20,10 @@ class Word
   def self.clear
     @@words = {}
     @@total_ids = 0
+  end
 
   def ==(word_to_compare)
-    self.name() == word_to_compare.name()
+    self.inputword() == word_to_compare.inputword()
   end
 
   def self.find(id)
