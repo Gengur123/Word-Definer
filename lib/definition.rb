@@ -14,7 +14,7 @@ class Definition
   end
 
   def save
-    @@words[self.id] = Word.new(self.inputword, self.id)
+    @@definitions[self.id] = Definition.new(self.inputdef, self.word_id, self.id)
   end
 
   def self.clear
@@ -23,7 +23,7 @@ class Definition
   end
 
   def ==(definition_to_compare)
-    (self.inputdef() == definition_to_compare.inpudef()) && (self.word_id() == definition_to_compare.word_id())
+    (self.inputdef() == definition_to_compare.inputdef()) && (self.word_id() == definition_to_compare.word_id())
   end
 
   def self.find(id)
