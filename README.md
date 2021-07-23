@@ -21,8 +21,8 @@ Open the app at Heroku! >>> https://evening-forest-02736.herokuapp.com/
 * _Type 'bundle install' in terminal to load Gems_
 * _To run tests, type 'sspec' in terminal_
 * _To run the program, type ruby docker compose up in terminal_
-## Known Bugs
 
+## Known Bugs
 * _Rename doesn't work_
 * _Adding a definition doesn't work_
 ## License
