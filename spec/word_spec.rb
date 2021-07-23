@@ -36,11 +36,32 @@ describe '#Word' do
   end
 
   describe('#==') do
-    it('') do
+    it('should compare 2 words and have them equal') do
       word1 = Word.new('swag', nil)
       word2 = Word.new('swag', nil)
       expect(word1).to(eq(word2))
     end
   end
 
+  describe('.find') do
+    it('should go to the word id and return it') do
+      word1 = Word.new('omegalul', nil)
+      word1.save()
+      word2 = Word.new('kekw', nil)
+      word2.save()
+      expect(Word.find(word1.id)).to(eq(word1))
+    end
+  end
+
+  describe('#edit') do
+    it('should edit the word') do
+      word1 = Word.new('swag', nil)
+      word1.save()
+      word2 = Word.new('kekw', nil)
+      word1.edit('kekw')
+      word2.edit('swag')
+      expect(word1.inputword).to(eq('kekw'))
+      expect(word2.inputword).to(eq('swag'))
+    end
+  end
 end

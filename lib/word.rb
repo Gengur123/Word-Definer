@@ -37,4 +37,9 @@ class Word
   def delete
     @@words.delete(self.id)
   end
+
+  def edit(inputword)
+    self.inputword = inputword
+    @@words[self.id] = Word.new(self.inputword, self.id)
+  end
 end
