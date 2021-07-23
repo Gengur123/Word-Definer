@@ -4,6 +4,7 @@
 
 ## Description
 A application that allows users to create there own dictionary by inputting any words, that then the application displays it to the user. The user then can add definitions to it by clicking on the word and typing anything they please. 
+Open the app at Heroku! >>> https://evening-forest-02736.herokuapp.com/
 ## Technologies Used
 
 * _Ruby_
