@@ -32,6 +32,7 @@ class Word
 
   def update(inputword)
     @inputword = inputword
+    
   end
 
   def delete

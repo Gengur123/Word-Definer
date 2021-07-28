@@ -15,16 +15,16 @@ Open the app at Heroku! >>> https://evening-forest-02736.herokuapp.com/
 
 ## Setup/Installation Requirements
 * _Clone this repository_
-* _Open terminal and type 'git clone [git link]'_
+* _Open terminal and type `git clone [git link]`_
 * _Navigate to project directory using cd in terminal_
 * _Open project in text editor (code .)_
-* _Type 'bundle install' in terminal to load Gems_
-* _To run tests, type 'sspec' in terminal_
+* _Type `bundle install` in terminal to load Gems_
+* _To run tests, type `sspec` in terminal_
 * _To run the program, type ruby docker compose up in terminal_
 
 ## Known Bugs
-* _Rename doesn't work_
-* _Adding a definition doesn't work_
+* _No known Bugs_
+
 ## License
 
 [MIT](https://en.wikipedia.org/wiki/MIT_License)
